@@ -1,11 +1,15 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useState} from 'react';
 import s from './style.module.css'
 import {addList} from "../../Store/listReducer";
 import {useDispatch} from "react-redux";
 // @ts-ignore
 import {useHistory} from "react-router-dom";
 
-export const AddListMenu = ({setAddMode}: any) => {
+type AddListPropsType = {
+    setAddMode: (e: boolean) => void
+}
+
+export const AddListMenu: React.FC<AddListPropsType> = ({setAddMode}) => {
     const dispatch = useDispatch()
     const history = useHistory()
     const [values, setValues] = useState<{title: string}>({
@@ -41,7 +45,7 @@ export const AddListMenu = ({setAddMode}: any) => {
                 <button className={s.submitButton} onClick={submitList}>Create Todo</button>
             </div>
             <div className={s.closeBar}>
-                <div className={s.closeButton} onClick={closeMenu}></div>
+                <div className={s.closeButton} onClick={closeMenu}> </div>
             </div>
 
         </div>

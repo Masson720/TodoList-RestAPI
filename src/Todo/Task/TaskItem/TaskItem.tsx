@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './style.module.css';
 import "react-datepicker/dist/react-datepicker.css";
 import {editTask} from "../../../Store/listReducer";
@@ -31,7 +31,7 @@ export const TaskItem: React.FC<TaskItemPropsType> = ({task,
                                                           confirmDeletionList,
                                                           editTaskMode,
                                                           currentPage}) => {
-    const {order, title, addedDate, deadline, id, priority, startDate, status, todoListId, description} = task;
+    const {title, addedDate, deadline, id, priority, startDate, status, todoListId, description} = task;
     const dispatch = useDispatch();
 
     const priorityTask = (e: number) => {

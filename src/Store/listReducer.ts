@@ -9,7 +9,7 @@ let initialState = {
     lists: [],
     tasks: [],
     totalCount: null
-}
+} as const;
 
 
 const taskFilter = (prev: any, actual: any) => {

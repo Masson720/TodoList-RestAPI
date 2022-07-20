@@ -1,6 +1,6 @@
 import {LoginAPI} from "../API/LoginAPI";
 import {ResultCodeEnum} from "../API/API";
-import {AppStateType, BaseThunkType, InferActionsTypes} from "./redux-store";
+import {AppStateType, InferActionsTypes} from "./redux-store";
 import {ThunkAction} from "redux-thunk";
 
 type FormDataType = {

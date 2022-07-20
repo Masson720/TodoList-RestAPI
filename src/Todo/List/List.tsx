@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch} from "react-redux";
-import {addList, deleteList, editList, requestList} from "../../Store/listReducer";
+import {deleteList, requestList} from "../../Store/listReducer";
 import {Preloader} from "../../Preloader/Preloader";
 import {ListType} from "../ListBody";
 // @ts-ignore
@@ -42,7 +42,7 @@ export const Lists: React.FC<ListsPropsType> = ({lists, dateTime}) => {
         {addMode ? null : <div className={s.addBar} onClick={addListMenu}>+</div>}
 
         {loaded ? lists.map((e: ListType) => <TodoItem
-            dateTime={dateTime} id={e.id} order={e.order}
+            dateTime={dateTime} id={e.id} key={e.id} order={e.order}
             title={e.title}
             addedDate={e.addedDate} />) :
                 <Preloader

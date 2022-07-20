@@ -18,7 +18,7 @@ export const Tasks: React.FC<TaskPropsType> = ({task, dateTime, currentPage}) =>
     const [deleteMode, setDeleteMode] = useState(false);
     const [editMode, setEditMode] = useState(false);
 
-    const confirmDeletionList = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const confirmDeletionTask = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.stopPropagation()
         if(deleteMode){
             setDeleteMode(false)
@@ -39,13 +39,13 @@ export const Tasks: React.FC<TaskPropsType> = ({task, dateTime, currentPage}) =>
     };
 
     if(deleteMode){
-        return <DeleteTask deleteThisTask={deleteThisTask} confirmDeletionList={confirmDeletionList}/>
+        return <DeleteTask deleteThisTask={deleteThisTask} confirmDeletionTask={confirmDeletionTask}/>
     }else if(editMode){
         return <div className={s.task}>
             <TaskEditMode task={task} setEditMode={setEditMode} currentPage={currentPage}/>
         </div>
     }else {
-        return <TaskItem task={task} dateTime={dateTime} confirmDeletionList={confirmDeletionList}
+        return <TaskItem task={task} dateTime={dateTime} confirmDeletionList={confirmDeletionTask}
                          editTaskMode={editTaskMode} currentPage={currentPage}
 
         />

@@ -4,7 +4,7 @@ import {Preloader} from "../../Preloader/Preloader";
 // @ts-ignore
 import {useHistory, Route} from "react-router-dom";
 import {useDispatch} from "react-redux";
-import {loadingTasks, reorderTask, requestTasks} from "../../Store/listReducer";
+import {loadingTasks, reorderTask} from "../../Store/listReducer";
 import "react-datepicker/dist/react-datepicker.css";
 import {AddTaskForm} from "../../AddMenus/AddTaskBar/AddTaskForm";
 import {Tasks} from "../Tasks";
@@ -121,7 +121,8 @@ export const TaskPage: React.FC<TasksPropsType> = ({tasks, dateTime, count}) => 
         />
         {addMode ? null : <div className={s.addBar} onClick={openAddTaskMenu}>+</div>}
         {
-            taskLoaded ? tasks.map((card: ItemsPropsType) => <div className={s.task} draggable={true}
+            taskLoaded ? tasks.map((card: ItemsPropsType) => <div className={s.task} key={card.id}
+                                                            draggable={true}
                                                             onDragStart={(e) => dragStartHandler(e, card)}
                                                             onDragEnd={(e) => dragEndHandler(e)}
                                                             onDragLeave={(e)=> dragLeaveHandler(e)}

@@ -62,7 +62,7 @@ type LoginFormPropsType = {
     submit: (values: FormType) => void
 }
 
-const LoginForm = ({submit}: LoginFormPropsType) => {
+const LoginForm: React.FC<LoginFormPropsType> = ({submit} ) => {
     const validate = (values: any) => {
         const errors: any = {};
         if(!values.email){
