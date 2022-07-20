@@ -1,0 +1,28 @@
+.body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.addBar {
+    display: flex;
+    margin-top: 30px;
+    width: 1200px;
+    height: 50px;
+    cursor: pointer;
+    background: #bfbfbb;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+.task {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 35px;
+    height: 250px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px rgba(154, 147, 140, 0.5);
+}

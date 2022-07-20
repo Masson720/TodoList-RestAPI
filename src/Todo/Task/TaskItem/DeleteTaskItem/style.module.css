@@ -1,0 +1,39 @@
+.task {
+    width: 1200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmDelete {
+    width: 275px;
+    height: 100px;
+}
+
+.buttonsBlock {
+    display: flex;
+    margin: 25px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    box-shadow: 3px 3px 6px #888888;
+}
+
+.buttonRed {
+    background: red;
+}
+
+.buttonBlue {
+    background: dodgerblue;
+}
+
+

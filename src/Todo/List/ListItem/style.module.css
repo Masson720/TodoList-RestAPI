@@ -1,0 +1,65 @@
+.addWindow {
+    width: 1200px;
+    height: 10vh;
+    margin: 0 auto;
+    border-radius: 9px;
+    background: white;
+    box-shadow: 7px 5px 7px grey;
+}
+
+.banner {
+    font-size: 18px;
+    color: white;
+    border-radius: 9px 9px 0 0;
+    height: 20px;
+    background: #4d87fa;
+    padding: 5px 10px;
+}
+
+.form {
+    display: flex;
+    padding: 5px 5px 5px 10px;
+    justify-content: space-between;
+}
+
+.title {
+    width: 400px;
+    height: 13px;
+    font-size: 18px;
+    background: #f0edeb;
+    border-radius: 30px;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+.submitButton {
+    width: 120px;
+    height: 35px;
+    background: #13ed34;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.closeBar {
+    display: flex;
+    justify-content: center;
+}
+
+.closeButton {
+    width: 150px;
+    height: 8px;
+    background: darkgrey;
+    transition: 0.5s linear;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.closeButton:hover {
+    background: black;
+}

@@ -1,0 +1,111 @@
+.body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.addBar {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 1200px;
+    height: 50px;
+    cursor: pointer;
+    background: #bfbfbb;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.addButton:hover {
+    cursor: pointer;
+}
+
+.list {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    box-shadow: 3px 2px 10px gainsboro;
+}
+
+.description {
+    padding: 11px 10px 0 20px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editBar {
+    float: right;
+    padding: 5px;
+}
+
+.deleteButton {
+    margin: 3px;
+    font-size: 20px;
+    color: #d3e8f5;
+    transition: 0.3s linear;
+}
+
+.deleteButton:hover {
+    color: red;
+}
+
+.editListButton {
+    font-size: 20px;
+    color: #6c6a6a;
+    transition: 0.5s linear;
+}
+
+
+.title {
+    font-size: 30px;
+}
+
+.border {
+    height: 1px;
+    background: #3e4452;
+    border: none;
+}
+
+.date {
+    font-size: 13px;
+    font-weight: bold;
+    color: #3e4452;
+}
+
+.deleteMode {
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.deleteButtons {
+    text-align: center;
+}
+
+.confirmDeleteButton {
+    margin: 12px 25px;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px #888888;
+}
+
+.buttonRed {
+    background: red;
+}
+
+.buttonBlue {
+    background: dodgerblue;
+}

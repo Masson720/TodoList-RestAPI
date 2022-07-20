@@ -1,0 +1,182 @@
+.taskBody {
+    padding: 10px 25px;
+    margin: 0 auto;
+}
+
+
+.deleteButton {
+    margin: 3px;
+    font-size: 20px;
+    color: #d3e8f5;
+    transition: 0.5s linear;
+}
+
+.deleteButton:hover {
+    color: red;
+}
+
+.editBar {
+    float: right;
+    padding: 4px;
+}
+
+.editListButton:hover {
+    font-size: 20px;
+    color: #d3e8f5;
+    transition: 0.5s linear;
+}
+
+.editListButton:hover {
+    color:white;
+}
+
+.editButton {
+    font-size: 25px;
+    margin: 3px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.editButton:hover {
+    color: dodgerblue;
+}
+
+.deleteTask {
+    font-size: 25px;
+    margin: 3px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.deleteTask:hover {
+    color: red;
+}
+
+.description {
+    width: 1130px;
+    height: 85px;
+    background: #f0edeb;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    word-wrap: break-word;
+}
+
+.completeTrue {
+    width: 40px;
+    height: 40px;
+    background: #1cfc03;
+    border-radius: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    box-shadow: 2px 2px 4px #888888;
+    cursor: pointer;
+}
+
+.completeFalse {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 30px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    box-shadow: 2px 2px 4px #888888;
+    cursor: pointer;
+}
+
+.titleBlock {
+    display: flex;
+    align-items: center;
+    margin: 7px 0 7px 0;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.border {
+    height: 2px;
+    background: #3e4452;
+    border: none;
+    border-radius: 3px;
+}
+
+.date {
+    font-size: 13px;
+    font-weight: bold;
+    color: #3e4452;
+}
+
+.howDate {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.dateBlock {
+    display: inline-block;
+    width: 450px;
+}
+
+.rightDate {
+    margin-left: 400px;
+    width: 200px;
+    display: inline-block;
+}
+
+.deleteMode {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.deleteButtons {
+    text-align: center;
+}
+
+.confirmDeleteButton {
+    margin: 20px 30px;
+    width: 50px;
+    height: 30px;
+}
+
+.priority {
+    width: 400px;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.priorityLevel div{
+    width: 100px;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    border-radius: 10px;
+    height: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.low {
+    background: #1cfc03;
+}
+
+.med {
+    background: #fffc73;
+}
+
+.high {
+    background: #ffa12f;
+}
+
+.veryHigh {
+    background: #ff7e29;
+}

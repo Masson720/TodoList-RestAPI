@@ -1,0 +1,96 @@
+.addTaskWindow {
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 9px;
+    width: 1200px;
+    height: 250px;
+    background: white;
+    box-shadow: 7px 5px 7px grey;
+}
+
+.taskBanner {
+    font-size: 18px;
+    color: white;
+    border-radius: 9px 9px 0 0;
+    height: 20px;
+    background: #4d87fa;
+    padding: 10px;
+}
+
+.form {
+    padding: 15px 15px 0 15px;
+}
+
+.title {
+    width: 600px;
+    height: 16px;
+    font-size: 18px;
+    background: #f0edeb;
+    border-radius: 30px;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+.description {
+    width: 1100px;
+    height: 25px;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    background: #f0edeb;
+    margin: 5px;
+    padding: 5px;
+}
+
+.block {
+    display: flex;
+    margin-left: 7px;
+    font-weight: bold;
+}
+
+.datePickers {
+    display: flex;
+}
+
+.datePicker {
+    width: 100px;
+    height: 15px;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 30px;
+    border: none;
+    background: #f0edeb;
+    padding: 10px;
+}
+
+.submitButton {
+    width: 100px;
+    height: 35px;
+    background: #13ed34;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.closeBar {
+    display: flex;
+    justify-content: center;
+}
+
+.closeButton {
+    width: 150px;
+    height: 8px;
+    background: darkgrey;
+    transition: 0.5s linear;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.closeButton:hover {
+    background: black;
+}
